@@ -41,7 +41,9 @@ export default function MarketplaceSection() {
 
           <div className="flex items-center gap-4 flex-wrap">
             <a
-              href="#"
+              href="https://www.tokopedia.com/theduckking"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white rounded-xl px-5 py-3 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
               style={{ minWidth: 160, height: 60 }}
             >
@@ -55,7 +57,9 @@ export default function MarketplaceSection() {
               />
             </a>
             <a
-              href="#"
+              href="https://www.blibli.com/brand/the-duck-king-sauce"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white rounded-xl px-5 py-3 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
               style={{ minWidth: 120, height: 60 }}
             >

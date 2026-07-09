@@ -1,0 +1,92 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+
+interface Props {
+  images: string[];
+  productName: string;
+  tags: string[];
+}
+
+export default function ProductGallery({ images, productName, tags }: Props) {
+  const [active, setActive] = useState(0);
+
+  // Packaging/label shots are .jpg; food photography is .png — use contain for packaging so text isn't cropped
+  const isPackaging = images[active]?.toLowerCase().endsWith(".jpg");
+
+  return (
+    <div className="flex flex-col h-full min-h-0">
+      {/* Main image — 90% of panel height */}
+      <div
+        className={`relative rounded-xl overflow-hidden shadow-sm min-h-0 ${isPackaging ? "bg-white" : "bg-gray-100"}`}
+        style={{ flex: "9" }}
+      >
+        <Image
+          src={images[active]}
+          alt={productName}
+          fill
+          className={`transition-opacity duration-300 ${isPackaging ? "object-contain" : "object-cover"}`}
+          priority
+          sizes="(max-width: 768px) 100vw, 60vw"
+        />
+        {/* Badges */}
+        <div className="absolute top-3 right-3 flex flex-col gap-1.5">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className={`flex items-center gap-1 text-[10px] font-bold px-2.5 py-1 rounded-full ${
+                tag === "HALAL"
+                  ? "bg-green-600 text-white"
+                  : tag === "FROZEN"
+                  ? "bg-blue-600 text-white"
+                  : "bg-navy text-white"
+              }`}
+            >
+              {tag === "HALAL" && (
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+              )}
+              {tag === "FROZEN" && (
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M18.364 5.636L5.636 18.364" />
+                </svg>
+              )}
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Thumbnails — ~30% of panel height, with ~10% gap above */}
+      {images.length > 1 && (
+        <div
+          className="flex gap-2 overflow-x-auto no-scrollbar min-h-0 mt-2"
+          style={{ flex: "1" }}
+        >
+          {images.map((src, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className={`relative flex-none rounded-lg overflow-hidden border-2 transition-all min-h-0 h-full aspect-square ${
+                active === i
+                  ? "border-navy shadow-md"
+                  : "border-transparent opacity-60 hover:opacity-90"
+              }`}
+              aria-label={`Image ${i + 1}`}
+            >
+              <Image
+                src={src}
+                alt={`${productName} ${i + 1}`}
+                fill
+                className="object-cover"
+                sizes="100px"
+              />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

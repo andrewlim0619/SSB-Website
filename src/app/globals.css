@@ -19,6 +19,33 @@
   to   { opacity: 1; transform: translateY(0);    }
 }
 
+@keyframes ssb-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* Leaflet map tooltip overrides */
+.ssb-map-tooltip {
+  background: rgba(27, 58, 107, 0.88) !important;
+  border: none !important;
+  border-radius: 5px !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 3px 7px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+  white-space: nowrap !important;
+}
+.ssb-map-tooltip::before {
+  display: none !important;
+}
+
 @layer components {
   .btn-primary {
     @apply bg-navy text-white px-6 py-3 rounded font-semibold text-sm hover:bg-navy-dark transition-colors duration-200 inline-flex items-center gap-2;

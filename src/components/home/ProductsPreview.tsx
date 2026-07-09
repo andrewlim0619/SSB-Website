@@ -7,7 +7,7 @@ const categories = [
     title: "Dimsum Frozen",
     description:
       "Pilihan dimsum premium siap saji dengan cita rasa autentik dan kualitas terbaik.",
-    image: "/images/products/dimsum/hakau_udang_2.png",
+    image: "/images/products/dimsum/hakau_udang_1.png",
     href: "/produk?kategori=dimsum",
   },
   {
