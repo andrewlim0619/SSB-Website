@@ -158,9 +158,9 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       <div className="container-pad py-3">
         <section className="grid grid-cols-1 md:grid-cols-[9fr_11fr]">
 
-        {/* Left: navy + dot grid */}
+        {/* Left: navy + dot grid — below gallery on mobile, left column on desktop */}
         <div
-          className="relative bg-navy text-white flex flex-col px-8 md:px-8 lg:px-10 py-10 md:py-12 rounded-2xl"
+          className="relative bg-navy text-white flex flex-col px-8 md:px-8 lg:px-10 py-10 md:py-12 rounded-2xl order-2 md:order-1 mt-4 md:mt-0"
           style={dotBg}
         >
           {/* Subtle teal glow blob */}
@@ -244,9 +244,9 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
           </FadeUp>
         </div>
 
-        {/* Right: gallery on light background */}
-        <div className="bg-gray-50 pl-6 md:pl-8 lg:pl-10 flex flex-col">
-          <FadeUp delay={100} className="w-full flex-1 flex flex-col">
+        {/* Right: gallery — on top on mobile, right column on desktop */}
+        <div className="bg-gray-50 rounded-2xl md:rounded-none p-4 md:p-0 md:pl-8 lg:pl-10 flex flex-col order-1 md:order-2 h-[340px] sm:h-[400px] md:h-auto">
+          <FadeUp delay={100} className="w-full flex-1 flex flex-col min-h-0">
             <ProductGallery images={images} productName={product.name} tags={product.tags} />
           </FadeUp>
         </div>
@@ -264,10 +264,25 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
           </FadeUp>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
-            {/* Spec grid — 3 columns, no card bubble */}
+            {/* Spec grid */}
             <div className="lg:col-span-2 flex flex-col">
               <FadeUp delay={80} className="flex-1 flex flex-col">
-                <div className="grid grid-cols-[1fr_1px_1fr_1px_1fr] flex-1">
+
+                {/* Mobile: 2-column card grid */}
+                <div className="grid grid-cols-2 gap-3 md:hidden">
+                  {specRows.filter(r => r.value).map((row) => (
+                    <div key={row.label} className="bg-white rounded-xl px-4 py-3 flex items-center gap-3 shadow-sm">
+                      <div className="shrink-0 [&_svg]:w-6 [&_svg]:h-6">{SPEC_ICONS[row.icon]}</div>
+                      <div>
+                        <p className="text-[10px] font-semibold text-teal uppercase tracking-wide leading-none mb-1">{row.label}</p>
+                        <p className="text-xs font-bold text-navy leading-tight">{row.value}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop: 3-column divider layout */}
+                <div className="hidden md:grid grid-cols-[1fr_1px_1fr_1px_1fr] flex-1">
 
                   {/* Column 1: SKU, Berat Bersih, Isi per Pack, Berat per Pcs */}
                   <div className="flex flex-col">
@@ -285,7 +300,6 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                     ))}
                   </div>
 
-                  {/* Vertical divider */}
                   <div className="bg-gray-300" />
 
                   {/* Column 2: Kemasan, Ukuran Tray, Isi per Karton, Ukuran Karton */}
@@ -304,7 +318,6 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                     ))}
                   </div>
 
-                  {/* Vertical divider */}
                   <div className="bg-gray-300" />
 
                   {/* Column 3: Penyimpanan, Umur Simpan, Sertifikasi, Asal Produk */}

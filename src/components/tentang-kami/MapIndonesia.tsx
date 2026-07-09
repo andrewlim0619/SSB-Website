@@ -17,11 +17,15 @@ const CITIES = [
 ];
 
 export default function MapIndonesia() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const zoom = isMobile ? 4 : 5;
+  const center: [number, number] = isMobile ? [-2.5, 113] : [-2.5, 118];
+
   return (
-    <div className="rounded-2xl overflow-hidden shadow-md" style={{ height: "400px" }}>
+    <div className="rounded-2xl overflow-hidden shadow-md h-[260px] md:h-[400px]">
       <MapContainer
-        center={[-2.5, 118]}
-        zoom={5}
+        center={center}
+        zoom={zoom}
         style={{ height: "100%", width: "100%" }}
         scrollWheelZoom={false}
         zoomControl={false}

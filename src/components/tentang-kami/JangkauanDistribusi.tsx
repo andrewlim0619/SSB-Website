@@ -5,7 +5,7 @@ import StatCounter from "./StatCounter";
 const MapIndonesia = dynamic(() => import("./MapIndonesia"), {
   ssr: false,
   loading: () => (
-    <div className="rounded-2xl bg-gray-100 animate-pulse" style={{ height: "400px" }} />
+    <div className="rounded-2xl bg-gray-100 animate-pulse h-[260px] md:h-[400px]" />
   ),
 });
 

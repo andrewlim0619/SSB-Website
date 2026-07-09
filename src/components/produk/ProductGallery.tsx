@@ -17,10 +17,9 @@ export default function ProductGallery({ images, productName, tags }: Props) {
 
   return (
     <div className="flex flex-col h-full min-h-0">
-      {/* Main image — 90% of panel height */}
+      {/* Main image — fills remaining height after thumbnails */}
       <div
-        className={`relative rounded-xl overflow-hidden shadow-sm min-h-0 ${isPackaging ? "bg-white" : "bg-gray-100"}`}
-        style={{ flex: "9" }}
+        className={`relative rounded-xl overflow-hidden shadow-sm flex-1 min-h-0 ${isPackaging ? "bg-white" : "bg-gray-100"}`}
       >
         <Image
           src={images[active]}
@@ -59,17 +58,14 @@ export default function ProductGallery({ images, productName, tags }: Props) {
         </div>
       </div>
 
-      {/* Thumbnails — ~30% of panel height, with ~10% gap above */}
+      {/* Thumbnails — fixed height so they're always tappable */}
       {images.length > 1 && (
-        <div
-          className="flex gap-2 overflow-x-auto no-scrollbar min-h-0 mt-2"
-          style={{ flex: "1" }}
-        >
+        <div className="flex gap-2 overflow-x-auto no-scrollbar mt-2 h-16 sm:h-20 md:h-20 shrink-0">
           {images.map((src, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`relative flex-none rounded-lg overflow-hidden border-2 transition-all min-h-0 h-full aspect-square ${
+              className={`relative flex-none rounded-lg overflow-hidden border-2 transition-all h-full aspect-square ${
                 active === i
                   ? "border-navy shadow-md"
                   : "border-transparent opacity-60 hover:opacity-90"
