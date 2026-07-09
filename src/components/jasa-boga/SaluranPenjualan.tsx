@@ -11,6 +11,7 @@ const platforms = [
   { name: "Grand Lucky",         image: "/images/client%20logos/platform/grandlucky_processed.png",             scale: 1.3 },
   { name: "Papaya Market",       image: "/images/client%20logos/platform/Papaya-Market_processed.png",          scale: 1.3 },
   { name: "Rumah Buah",          image: "/images/client%20logos/platform/logo-partner-13-rumah-buah-logo.jpeg", scale: 1.4 },
+  { name: "Mbrio",               image: "/images/icons/mbrio.png",                                             scale: 1.2 },
 ];
 
 const doubled = [...platforms, ...platforms];

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeUp from "@/components/ui/FadeUp";
 
 const certs = [
@@ -77,12 +78,18 @@ export default function BuktiSertifikasi() {
               >
                 {/* Icon + badge row */}
                 <div className="flex items-start justify-between">
-                  <div className={`w-12 h-12 rounded-xl ${c.iconBg} flex items-center justify-center shrink-0`}>
-                    <svg className={`w-6 h-6 ${c.iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {c.category === "Halal" ? (
+                    <Image src="/images/icons/halal-badge.svg" alt="Halal" width={40} height={40} className="w-10 h-10 object-contain" />
+                  ) : c.category === "BPOM" ? (
+                    <Image src="/images/icons/BADAN_POM.png" alt="BPOM" width={40} height={40} className="w-10 h-10 object-contain" />
+                  ) : c.category === "KAN" ? (
+                    <Image src="/images/icons/mbrio.png" alt="KAN" width={40} height={40} className="w-10 h-10 object-contain" />
+                  ) : (
+                    <svg className={`w-8 h-8 ${c.iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8}
                         d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                  </div>
+                  )}
                   <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${c.badgeBg}`}>
                     {c.category}
                   </span>

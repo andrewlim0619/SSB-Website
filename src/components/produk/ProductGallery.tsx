@@ -30,31 +30,34 @@ export default function ProductGallery({ images, productName, tags }: Props) {
           sizes="(max-width: 768px) 100vw, 60vw"
         />
         {/* Badges */}
-        <div className="absolute top-3 right-3 flex flex-col gap-1.5">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className={`flex items-center gap-1 text-[10px] font-bold px-2.5 py-1 rounded-full ${
-                tag === "HALAL"
-                  ? "bg-green-600 text-white"
-                  : tag === "FROZEN"
-                  ? "bg-blue-600 text-white"
-                  : "bg-navy text-white"
-              }`}
-            >
-              {tag === "HALAL" && (
-                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                </svg>
-              )}
-              {tag === "FROZEN" && (
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M18.364 5.636L5.636 18.364" />
-                </svg>
-              )}
-              {tag}
-            </span>
-          ))}
+        <div className="absolute top-3 right-3 flex flex-col gap-1.5 items-end">
+          {tags.map((tag) =>
+            tag === "HALAL" ? (
+              <div key={tag} className="bg-white rounded-xl p-1.5 shadow-md border border-gray-100">
+                <Image
+                  src="/images/icons/halal-badge.svg"
+                  alt="Halal"
+                  width={36}
+                  height={36}
+                  className="object-contain"
+                />
+              </div>
+            ) : (
+              <span
+                key={tag}
+                className={`flex items-center gap-1 text-[10px] font-bold px-2.5 py-1 rounded-full ${
+                  tag === "FROZEN" ? "bg-blue-600 text-white" : "bg-navy text-white"
+                }`}
+              >
+                {tag === "FROZEN" && (
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M18.364 5.636L5.636 18.364" />
+                  </svg>
+                )}
+                {tag}
+              </span>
+            )
+          )}
         </div>
       </div>
 

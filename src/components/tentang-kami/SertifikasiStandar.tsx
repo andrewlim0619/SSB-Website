@@ -1,27 +1,27 @@
+import Image from "next/image";
 import FadeUp from "@/components/ui/FadeUp";
 
 const certs = [
   {
     label: "Halal MUI",
     desc: "Seluruh produk diproduksi sesuai standar halal yang telah disertifikasi MUI.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.6} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-    ),
+    icon: <Image src="/images/icons/halal-badge.svg" alt="Halal MUI" width={32} height={32} className="w-8 h-8 object-contain" />,
     color: "text-green-600",
     bg: "bg-green-50 border-green-100",
   },
   {
     label: "Kepatuhan BPOM",
     desc: "Produk memenuhi regulasi keamanan pangan sesuai ketentuan BPOM Indonesia.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.6} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-      </svg>
-    ),
+    icon: <Image src="/images/icons/BADAN_POM.png" alt="BPOM" width={32} height={32} className="w-8 h-8 object-contain" />,
     color: "text-blue-600",
     bg: "bg-blue-50 border-blue-100",
+  },
+  {
+    label: "Lisensi KAN",
+    desc: "Akreditasi nasional yang memastikan kompetensi dan standar sistem manajemen mutu.",
+    icon: <Image src="/images/icons/mbrio.png" alt="KAN" width={32} height={32} className="w-8 h-8 object-contain" />,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50 border-indigo-100",
   },
   {
     label: "Food Safety",
@@ -70,7 +70,7 @@ export default function SertifikasiStandar() {
           </p>
         </FadeUp>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {certs.map((c, i) => (
             <FadeUp key={c.label} delay={i * 60}>
               <div className={`rounded-2xl border ${c.bg} p-5 flex flex-col items-center text-center gap-3 h-full`}>

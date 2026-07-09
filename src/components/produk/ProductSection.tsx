@@ -29,14 +29,10 @@ const ICONS: Record<string, React.ReactNode> = {
     </svg>
   ),
   saus: (
-    <svg className="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 3h4v2h-4zM10.5 5h3v2h-3zM10.5 7L9 9.5h6L13.5 7M9 9.5h6v11a1 1 0 01-1 1h-4a1 1 0 01-1-1V9.5M10.5 14h3M10.5 16h2" />
-    </svg>
+    <span className="block w-8 h-8 shrink-0 bg-navy" style={{ WebkitMaskImage: "url('/images/icons/noun-jar-7571128.png')", maskImage: "url('/images/icons/noun-jar-7571128.png')", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskPosition: "center", maskPosition: "center", filter: "blur(0.5px) contrast(20)" }} />
   ),
   cemilan: (
-    <svg className="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 21h8l1.5-9H6.5L8 21M10.5 12v8.5M13.5 12l.5 8.5M7.5 12C7.5 9 9 8 10 10C10 7.5 12 6.5 14 10C15 8 16.5 8.5 16.5 12" />
-    </svg>
+    <span className="block w-8 h-8 shrink-0 bg-navy" style={{ WebkitMaskImage: "url('/images/icons/noun-snack-8370495.png')", maskImage: "url('/images/icons/noun-snack-8370495.png')", WebkitMaskSize: "contain", maskSize: "contain", WebkitMaskRepeat: "no-repeat", maskRepeat: "no-repeat", WebkitMaskPosition: "center", maskPosition: "center", filter: "blur(0.5px) contrast(20)" }} />
   ),
 };
 
