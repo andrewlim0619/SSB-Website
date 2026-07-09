@@ -5,6 +5,7 @@ import NilaiPerusahaan from "@/components/tentang-kami/NilaiPerusahaan";
 import SegmenStats from "@/components/tentang-kami/SegmenStats";
 import JangkauanDistribusi from "@/components/tentang-kami/JangkauanDistribusi";
 import SertifikasiStandar from "@/components/tentang-kami/SertifikasiStandar";
+import BuktiSertifikasi from "@/components/shared/BuktiSertifikasi";
 import TentangCTA from "@/components/tentang-kami/TentangCTA";
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function TentangKami() {
       <SegmenStats />
       <JangkauanDistribusi />
       <SertifikasiStandar />
+      <BuktiSertifikasi />
       <TentangCTA />
     </main>
   );

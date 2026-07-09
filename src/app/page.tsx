@@ -5,6 +5,7 @@ import IndustrySegments from "@/components/home/IndustrySegments";
 import ProductsPreview from "@/components/home/ProductsPreview";
 import MarketplaceSection from "@/components/home/MarketplaceSection";
 import Testimonials from "@/components/home/Testimonials";
+import BuktiSertifikasi from "@/components/shared/BuktiSertifikasi";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ProductsPreview />
       <MarketplaceSection />
       <Testimonials />
+      <BuktiSertifikasi />
     </>
   );
 }
