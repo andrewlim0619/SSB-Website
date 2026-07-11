@@ -13,8 +13,8 @@ const produk = [
   {
     title: "Sauces & Condiments",
     desc: "Rangkaian saus dan bumbu berkualitas untuk kebutuhan foodservice dan retail.",
-    image: "/images/products/sauce/duck_sauce.png",
-    fit: "object-contain",
+    image: "/images/products/sauce/Beranda_Aneka Saus.png",
+    fit: "object-cover",
     href: "/produk",
   },
   {

@@ -3,9 +3,10 @@ import TrustIndicators from "@/components/home/TrustIndicators";
 import AboutTeaser from "@/components/home/AboutTeaser";
 import IndustrySegments from "@/components/home/IndustrySegments";
 import ProductsPreview from "@/components/home/ProductsPreview";
+import KlienKami from "@/components/jasa-boga/KlienKami";
+import SertifikasiStandar from "@/components/tentang-kami/SertifikasiStandar";
+import SaluranPenjualan from "@/components/jasa-boga/SaluranPenjualan";
 import MarketplaceSection from "@/components/home/MarketplaceSection";
-import Testimonials from "@/components/home/Testimonials";
-import BuktiSertifikasi from "@/components/shared/BuktiSertifikasi";
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
       <AboutTeaser />
       <IndustrySegments />
       <ProductsPreview />
+      <KlienKami />
+      <SertifikasiStandar showCTA />
+      <SaluranPenjualan />
       <MarketplaceSection />
-      <Testimonials />
-      <BuktiSertifikasi />
     </>
   );
 }

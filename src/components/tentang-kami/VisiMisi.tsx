@@ -82,7 +82,16 @@ export default function VisiMisi() {
           {/* MISI — 2 cols */}
           <FadeUp delay={140} className="md:col-span-2">
             <div className="bg-white rounded-2xl p-8 h-full">
-              <p className="text-xl font-bold text-teal uppercase tracking-widest mb-6">MISI</p>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center text-teal shrink-0">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" strokeWidth="1.8" />
+                    <circle cx="12" cy="12" r="6" strokeWidth="1.8" />
+                    <circle cx="12" cy="12" r="2" strokeWidth="1.8" />
+                  </svg>
+                </div>
+                <p className="text-xl font-bold text-teal uppercase tracking-widest">MISI</p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {misi.map((m) => (
                   <div key={m.num} className="flex gap-4 items-start">

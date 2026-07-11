@@ -14,8 +14,8 @@ const contoh = [
     tag: "Private Label",
     title: "Private Label Sauce",
     desc: "Pengembangan saus dengan merek klien, mulai dari formulasi rasa hingga desain kemasan yang retail-ready.",
-    image: "/images/products/sauce/duck_sauce.png",
-    fit: "object-contain",
+    image: "/images/products/sauce/Beranda_Aneka Saus.png",
+    fit: "object-cover",
   },
   {
     tag: "Custom Dimsum",

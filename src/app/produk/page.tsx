@@ -2,6 +2,7 @@ import ProductsHero from "@/components/produk/ProductsHero";
 import CategoryNav from "@/components/produk/CategoryNav";
 import ProductSection from "@/components/produk/ProductSection";
 import ProductsTrustBar from "@/components/produk/ProductsTrustBar";
+import Testimonials from "@/components/home/Testimonials";
 import { ALL_PRODUCTS } from "@/data/products";
 
 const dimsumProducts = ALL_PRODUCTS.filter((p) => p.category === "dimsum");
@@ -38,6 +39,7 @@ export default function Produk() {
         products={cemilanProducts}
       />
 
+      <Testimonials />
       <ProductsTrustBar />
     </>
   );

@@ -12,7 +12,7 @@ const reasons = [
 
 const photos = [
   { src: "/images/products/dimsum/hakau_udang_1.png", alt: "Hakau Udang", fit: "object-contain" },
-  { src: "/images/products/sauce/duck_sauce.png", alt: "Duck Sauce", fit: "object-contain" },
+  { src: "/images/products/sauce/Beranda_Aneka Saus.png", alt: "Aneka Saus", fit: "object-cover" },
   { src: "/images/products/dimsum/chicken_shrimp_dumpling.png", alt: "Chicken Shrimp Dumpling", fit: "object-contain" },
   { src: "/images/products/snack/crispy_fish_skin.png", alt: "Crispy Fish Skin", fit: "object-contain" },
 ];

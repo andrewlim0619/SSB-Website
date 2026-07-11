@@ -4,36 +4,48 @@ import FadeUp from "@/components/ui/FadeUp";
 const BASE = "/images/client%20logos/client%20company%20logos";
 
 const logoClients = [
-  { name: "Sheraton Hotels & Resorts",           image: `${BASE}/sheraton-hotels-resorts-seeklogo.png`,         scale: 1.1 },
-  { name: "Le Méridien",                          image: `${BASE}/le-meridien-seeklogo.png`,                     scale: 1.0 },
-  { name: "Pullman Hotels & Resorts",             image: `${BASE}/pullman.png`,                                  scale: 1.1 },
-  { name: "The Dharmawangsa Jakarta",             image: `${BASE}/the-dharmawangsa-seeklogo.png`,                scale: 1.0 },
-  { name: "Atria Hotels",                         image: `${BASE}/atria_hotels-Photoroom.png`,                   scale: 1.2 },
-  { name: "Park Hyatt",                           image: `${BASE}/park-hyatt-vector-logo.png`,                   scale: 1.1 },
+  { name: "Ahmad Dhan Master Piece Family Karaoke", image: `${BASE}/masterpiece%20karaoke.JPG`,                  scale: 0.5 },
   { name: "Ambhara Hotel Jakarta",                image: `${BASE}/ambhara-logo.png`,                             scale: 1.1 },
-  { name: "Ahmad Dhan Master Piece Family Karaoke", image: `${BASE}/masterpiece%20karaoke.JPG`,                  scale: 1.0 },
+  { name: "Atria Hotels",                         image: `${BASE}/atria_hotels-Photoroom.png`,                   scale: 1.2 },
+  { name: "Bajawa Flores",                        image: `${BASE}/bajawa_flores.png`,                            scale: 1.1 },
   { name: "Cinépolis",                            image: `${BASE}/cinepolis.png`,                                scale: 1.1 },
-  { name: "Bajawa Flores",                         image: `${BASE}/bajawa_flores.png`,                            scale: 1.1 },
-  { name: "ibis Styles",                          image: `${BASE}/Ibis_styles.png`,                              scale: 1.1 },
-  { name: "Swiss-Belhotel",                       image: `${BASE}/Swiss-Belhotel%2BLogo%2B%28Vertical%29.svg`,  scale: 0.9 },
-  { name: "Hotel Tentrem",                        image: `${BASE}/logo-tentrem-yog.png`,                         scale: 1.1 },
-  { name: "Mercure Hotels",                       image: `${BASE}/Mercure_Hotels_Logo_2013.svg.webp`,            scale: 1.1 },
+  { name: "Four Seasons",                         image: `${BASE}/four_seasons_hotel.png`,                       scale: 1.0 },
   { name: "Golden Tulip Hotels",                  image: `${BASE}/Logo_Golden_Tulip.png`,                        scale: 1.1 },
   { name: "Harris Hotel",                         image: `${BASE}/Logo-Harris-Hotel-4.png`,                      scale: 1.1 },
-  { name: "Four Seasons",                         image: `${BASE}/four_seasons_hotel.png`,                       scale: 1.0 },
+  { name: "Hotel Tentrem",                        image: `${BASE}/logo-tentrem-yog.png`,                         scale: 1.1 },
+  { name: "ibis Styles",                          image: `${BASE}/Ibis_styles.png`,                              scale: 1.1 },
+  { name: "Le Méridien",                          image: `${BASE}/le-meridien-seeklogo.png`,                     scale: 1.0 },
+  { name: "Mercure Hotels",                       image: `${BASE}/Mercure_Hotels_Logo_2013.svg.webp`,            scale: 1.1 },
+  { name: "Park Hyatt",                           image: `${BASE}/park-hyatt-vector-logo.png`,                   scale: 1.1 },
+  { name: "Pullman Hotels & Resorts",             image: `${BASE}/pullman.png`,                                  scale: 0.55 },
+  { name: "Sheraton Hotels & Resorts",            image: `${BASE}/sheraton-hotels-resorts-seeklogo.png`,         scale: 1.1 },
+  { name: "Swiss-Belhotel",                       image: `${BASE}/Swiss-Belhotel%2BLogo%2B%28Vertical%29.svg`,  scale: 0.9 },
+  { name: "The Dharmawangsa Jakarta",             image: `${BASE}/the-dharmawangsa-seeklogo.png`,                scale: 1.0 },
 ];
 
 const textClients: string[] = [];
 
-const dotBg = {
-  backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)",
-  backgroundSize: "28px 28px",
-};
-
 export default function KlienKami() {
   return (
-    <section className="py-16 bg-navy relative overflow-hidden" style={dotBg}>
+    <section className="py-16 bg-navy relative overflow-hidden">
+      {/* Base gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-[#0d2347]" />
+
+      {/* Dot grid pattern */}
+      <div className="absolute inset-0" style={{
+        backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)",
+        backgroundSize: "24px 24px",
+      }} />
+
+      {/* Diagonal lines */}
+      <div className="absolute inset-0 opacity-[0.04]" style={{
+        backgroundImage: "repeating-linear-gradient(45deg, white 0px, white 1px, transparent 1px, transparent 24px)",
+      }} />
+
+      {/* Teal glow blobs */}
+      <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-teal/10 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-teal/8 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-teal/5 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 container-pad">
 

@@ -2,8 +2,6 @@ import Image from "next/image";
 import FadeUp from "@/components/ui/FadeUp";
 
 const platforms = [
-  { name: "Tokopedia",           image: "/images/icons/tokopedia_full_logo.png",                                 scale: 1.0 },
-  { name: "Blibli",              image: "/images/icons/blibli_logo.png",                                        scale: 1.0 },
   { name: "99 Ranch Market",     image: "/images/client%20logos/platform/99_ranch_market_logo.png",             scale: 1.4 },
   { name: "Allfresh",            image: "/images/client%20logos/platform/Allfresh_processed.png",               scale: 1.2 },
   { name: "Diamond Supermarket", image: "/images/client%20logos/platform/Diamond-Supermarket_processed.png",    scale: 1.2 },
@@ -11,7 +9,6 @@ const platforms = [
   { name: "Grand Lucky",         image: "/images/client%20logos/platform/grandlucky_processed.png",             scale: 1.3 },
   { name: "Papaya Market",       image: "/images/client%20logos/platform/Papaya-Market_processed.png",          scale: 1.3 },
   { name: "Rumah Buah",          image: "/images/client%20logos/platform/logo-partner-13-rumah-buah-logo.jpeg", scale: 1.4 },
-  { name: "Mbrio",               image: "/images/icons/mbrio.png",                                             scale: 1.2 },
 ];
 
 const doubled = [...platforms, ...platforms];

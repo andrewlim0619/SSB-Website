@@ -14,7 +14,7 @@ const categories = [
     title: "Aneka Saus",
     description:
       "Beragam saus berkualitas untuk melengkapi kebutuhan foodservice maupun retail.",
-    image: "/images/products/sauce/xo_sauce.png",
+    image: "/images/products/sauce/Beranda_Aneka Saus.png",
     href: "/produk?kategori=saus",
   },
   {

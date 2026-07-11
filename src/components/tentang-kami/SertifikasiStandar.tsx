@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import FadeUp from "@/components/ui/FadeUp";
 
 const certs = [
@@ -58,7 +59,7 @@ const certs = [
   },
 ];
 
-export default function SertifikasiStandar() {
+export default function SertifikasiStandar({ showCTA = false }: { showCTA?: boolean }) {
   return (
     <section className="py-16 bg-blue-50">
       <div className="container-pad">
@@ -81,6 +82,20 @@ export default function SertifikasiStandar() {
             </FadeUp>
           ))}
         </div>
+
+        {showCTA && (
+          <FadeUp delay={400} className="text-center mt-10">
+            <Link
+              href="/tentang-kami#bukti-sertifikasi"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              Lihat Bukti Sertifikasi
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </FadeUp>
+        )}
       </div>
     </section>
   );

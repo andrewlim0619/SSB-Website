@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function JasaBogaHero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden">
       {/* Full-bleed background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/banner/homepage_banner.png"
+          src="/images/banner/Jasa Boga Banner.png"
           alt="Jasa Boga SSB"
           fill
           className="object-cover object-center"
@@ -24,7 +24,7 @@ export default function JasaBogaHero() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 w-full pt-20 pb-12 px-6 sm:px-12 lg:px-20">
+      <div className="relative z-10 w-full py-14 px-6 sm:px-12 lg:px-20">
         <div className="max-w-xl">
           <span
             className="inline-block bg-teal/10 text-teal text-xs font-semibold px-3 py-1 rounded mb-5 tracking-wider uppercase"

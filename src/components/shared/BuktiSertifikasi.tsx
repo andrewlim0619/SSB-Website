@@ -56,7 +56,7 @@ const certs = [
 
 export default function BuktiSertifikasi() {
   return (
-    <section className="py-16 bg-white">
+    <section id="bukti-sertifikasi" className="py-16 bg-white">
       <div className="container-pad">
 
         <FadeUp className="text-center mb-10">
