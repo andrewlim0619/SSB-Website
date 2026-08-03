@@ -36,11 +36,13 @@ const ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
+const BLUR_URL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjZjFmNWY5Ii8+PC9zdmc+";
+
 function ProductCard({ product }: { product: ProductItem }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col h-full">
-      <div className="relative h-36 sm:h-40">
-        <Image src={product.image} alt={product.name} fill className="object-cover" />
+      <div className="relative h-36 sm:h-40 bg-gray-100">
+        <Image src={product.image} alt={product.name} fill className="object-cover" placeholder="blur" blurDataURL={BLUR_URL} />
       </div>
       <div className="p-3 flex flex-col flex-1">
         <h3 className="text-xs font-bold text-navy mb-1 leading-snug line-clamp-2">{product.name}</h3>

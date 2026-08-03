@@ -75,7 +75,7 @@ export default function SegmenStats() {
                 {segments.map((s) => (
                   <div
                     key={s.label}
-                    className="bg-white rounded-2xl p-4 flex flex-col items-center text-center gap-3 shadow-sm hover:shadow-md transition-shadow"
+                    className="bg-white rounded-2xl p-4 flex flex-col items-center text-center gap-3 shadow-sm"
                   >
                     <div className="w-12 h-12 rounded-xl bg-navy/5 flex items-center justify-center text-navy">
                       {s.icon}

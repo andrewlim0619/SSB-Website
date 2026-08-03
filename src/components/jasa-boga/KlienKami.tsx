@@ -63,7 +63,7 @@ export default function KlienKami() {
             {logoClients.map((c) => (
               <div
                 key={c.name}
-                className="bg-white rounded-2xl border border-transparent hover:border-teal/25 px-4 pt-4 pb-3 flex flex-col items-center shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-200 w-[calc(50%-6px)] sm:w-[calc(33.33%-8px)] lg:w-[calc(25%-9px)]"
+                className="bg-white rounded-2xl border border-transparent px-4 pt-4 pb-3 flex flex-col items-center shadow-sm w-[calc(50%-6px)] sm:w-[calc(33.33%-8px)] lg:w-[calc(25%-9px)]"
               >
                 {/* Logo image — fixed height so fill has a reference */}
                 <div className="relative w-full h-12">

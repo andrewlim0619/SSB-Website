@@ -1,6 +1,8 @@
-import dynamic from "next/dynamic";
+"use client";
+
 import FadeUp from "@/components/ui/FadeUp";
 import StatCounter from "./StatCounter";
+import dynamic from "next/dynamic";
 
 const MapIndonesia = dynamic(() => import("./MapIndonesia"), {
   ssr: false,
@@ -28,10 +30,8 @@ export default function JangkauanDistribusi() {
           <h2 className="text-2xl md:text-3xl font-bold text-navy">Jangkauan Distribusi</h2>
         </FadeUp>
 
-        {/* Map */}
         <MapIndonesia />
 
-        {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 mt-8 pt-8 border-t border-gray-100 divide-x divide-gray-100">
           {STATS.map((s, i) => (
             <FadeUp key={s.label} delay={i * 80}>

@@ -9,6 +9,8 @@ interface Props {
   tags: string[];
 }
 
+const BLUR_URL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjZjFmNWY5Ii8+PC9zdmc+";
+
 export default function ProductGallery({ images, productName, tags }: Props) {
   const [active, setActive] = useState(0);
 
@@ -28,6 +30,8 @@ export default function ProductGallery({ images, productName, tags }: Props) {
           className={`transition-opacity duration-300 ${isPackaging ? "object-contain" : "object-cover"}`}
           priority
           sizes="(max-width: 768px) 100vw, 60vw"
+          placeholder="blur"
+          blurDataURL={BLUR_URL}
         />
         {/* Badges */}
         <div className="absolute top-3 right-3 flex flex-col gap-1.5 items-end">
@@ -81,6 +85,8 @@ export default function ProductGallery({ images, productName, tags }: Props) {
                 fill
                 className="object-cover"
                 sizes="100px"
+                placeholder="blur"
+                blurDataURL={BLUR_URL}
               />
             </button>
           ))}

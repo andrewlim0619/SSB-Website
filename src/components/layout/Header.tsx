@@ -15,7 +15,6 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const pathname = usePathname();
 
   return (
@@ -40,6 +39,7 @@ export default function Header() {
               width={84}
               height={34}
               className="object-contain"
+              style={{ height: "auto" }}
             />
           </Link>
 
@@ -60,18 +60,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Search + Mobile toggle */}
+          {/* Mobile toggle */}
           <div className="flex items-center gap-3">
-            <button
-              onClick={() => setSearchOpen(!searchOpen)}
-              className="text-navy hover:text-teal transition-colors"
-              aria-label="Search"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
-
             {/* Hamburger */}
             <button
               className="md:hidden text-navy"
@@ -89,17 +79,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Search bar */}
-        {searchOpen && (
-          <div className="pb-3">
-            <input
-              type="text"
-              placeholder="Cari produk..."
-              className="w-full border border-gray-200 rounded px-4 py-2 text-sm focus:outline-none focus:border-teal"
-              autoFocus
-            />
-          </div>
-        )}
       </div>
 
       {/* Mobile menu */}

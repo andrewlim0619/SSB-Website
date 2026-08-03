@@ -70,7 +70,7 @@ export default function NilaiPerusahaan() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {values.map((v, i) => (
             <FadeUp key={v.label} delay={i * 70}>
-              <div className={`rounded-2xl border ${v.accent} bg-white p-5 flex flex-col items-center text-center h-full hover:shadow-md transition-shadow`}>
+              <div className={`rounded-2xl border ${v.accent} bg-white p-5 flex flex-col items-center text-center h-full`}>
                 <div className={`w-14 h-14 rounded-xl ${v.color} border ${v.accent} flex items-center justify-center mb-4`}>
                   {v.icon}
                 </div>

@@ -80,8 +80,8 @@ export default function IndustrySegments() {
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
           {segments.map((seg, i) => (
             <FadeUp key={seg.label} delay={i * 80}>
-              <div className="flex flex-col items-center gap-2 group cursor-default w-20 sm:w-24">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white shadow-sm flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-white transition-colors duration-200">
+              <div className="flex flex-col items-center gap-2 w-20 sm:w-24">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white shadow-sm flex items-center justify-center text-navy">
                   {seg.icon}
                 </div>
                 <span className="text-xs font-semibold text-gray-700 text-center leading-snug">

@@ -109,13 +109,17 @@ const SPEC_ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
-export default function ProductDetailPage({ params }: { params: { slug: string } }) {
-  const product = getProductBySlug(params.slug);
+const BLUR_URL = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjZjFmNWY5Ii8+PC9zdmc+";
+
+export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
   if (!product) notFound();
 
-  const galleryImages = getGalleryImages(params.slug);
+  const galleryImages = getGalleryImages(slug);
   const images = galleryImages.length > 0 ? galleryImages : [product.image];
   const related = getRelatedProducts(product);
+
 
   const specRows = [
     { icon: "sku",    label: "SKU",            value: product.specs.sku },
@@ -399,13 +403,15 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                 href={`/produk/${rel.slug}`}
                 className="group block bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
               >
-                <div className="relative aspect-square w-full">
+                <div className="relative aspect-square w-full bg-gray-100">
                   <Image
                     src={rel.image}
                     alt={rel.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 50vw, 25vw"
+                    placeholder="blur"
+                    blurDataURL={BLUR_URL}
                   />
                 </div>
                 <div className="p-3">

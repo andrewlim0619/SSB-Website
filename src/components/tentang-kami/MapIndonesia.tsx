@@ -1,6 +1,6 @@
 "use client";
 
-import { MapContainer, TileLayer, CircleMarker, Tooltip } from "react-leaflet";
+import { useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
 
 const CITIES = [
@@ -17,54 +17,66 @@ const CITIES = [
 ];
 
 export default function MapIndonesia() {
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const zoom = isMobile ? 4 : 5;
-  const center: [number, number] = isMobile ? [-2.5, 113] : [-2.5, 118];
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let active = true;
+    let mapInstance: ReturnType<typeof import("leaflet").then> | any = null;
+
+    import("leaflet").then((L) => {
+      if (!active || !containerRef.current) return;
+
+      const isMobile = window.innerWidth < 768;
+
+      mapInstance = L.map(containerRef.current, {
+        center: isMobile ? [-2.5, 113] : [-2.5, 118],
+        zoom: isMobile ? 4 : 5,
+        scrollWheelZoom: false,
+        zoomControl: false,
+        dragging: false,
+        doubleClickZoom: false,
+        touchZoom: false,
+        keyboard: false,
+        attributionControl: true,
+      });
+
+      L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        { attribution: "Tiles &copy; Esri", maxZoom: 19 }
+      ).addTo(mapInstance);
+
+      CITIES.forEach((city) => {
+        L.circleMarker([city.lat, city.lng] as [number, number], {
+          radius: 8,
+          fillColor: "#00A896",
+          fillOpacity: 1,
+          color: "white",
+          weight: 2.5,
+        })
+          .addTo(mapInstance)
+          .bindTooltip(city.name, {
+            permanent: true,
+            direction: "top",
+            offset: [0, -12],
+            className: "ssb-map-tooltip",
+          })
+          .openTooltip();
+      });
+    });
+
+    return () => {
+      active = false;
+      if (mapInstance) {
+        mapInstance.remove();
+        mapInstance = null;
+      }
+    };
+  }, []);
 
   return (
-    <div className="rounded-2xl overflow-hidden shadow-md h-[260px] md:h-[400px]">
-      <MapContainer
-        center={center}
-        zoom={zoom}
-        style={{ height: "100%", width: "100%" }}
-        scrollWheelZoom={false}
-        zoomControl={false}
-        dragging={false}
-        doubleClickZoom={false}
-        touchZoom={false}
-        keyboard={false}
-        attributionControl={true}
-      >
-        {/* Esri satellite imagery — free, no API key */}
-        <TileLayer
-          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-          attribution="Tiles &copy; Esri"
-          maxZoom={19}
-        />
-
-        {CITIES.map((city) => (
-          <CircleMarker
-            key={city.name}
-            center={[city.lat, city.lng]}
-            radius={8}
-            pathOptions={{
-              fillColor: "#00A896",
-              fillOpacity: 1,
-              color: "white",
-              weight: 2.5,
-            }}
-          >
-            <Tooltip
-              permanent
-              direction="top"
-              offset={[0, -12]}
-              className="ssb-map-tooltip"
-            >
-              {city.name}
-            </Tooltip>
-          </CircleMarker>
-        ))}
-      </MapContainer>
-    </div>
+    <div
+      ref={containerRef}
+      className="rounded-2xl overflow-hidden shadow-md h-[260px] md:h-[400px]"
+    />
   );
 }

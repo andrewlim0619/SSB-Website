@@ -40,7 +40,7 @@ export default function SaluranPenjualan() {
           {doubled.map((p, i) => (
             <div
               key={i}
-              className="flex-shrink-0 bg-white border border-gray-200 rounded-2xl px-7 py-4 flex items-center justify-center shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-300 hover:scale-105"
+              className="flex-shrink-0 bg-white border border-gray-200 rounded-2xl px-7 py-4 flex items-center justify-center shadow-sm"
               style={{ width: "160px", height: "80px" }}
             >
               <div className="relative w-full h-full" style={{ transform: `scale(${p.scale})` }}>
