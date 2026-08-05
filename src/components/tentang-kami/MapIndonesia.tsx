@@ -21,7 +21,7 @@ export default function MapIndonesia() {
 
   useEffect(() => {
     let active = true;
-    let mapInstance: ReturnType<typeof import("leaflet").then> | any = null;
+    let mapInstance: any = null;
 
     import("leaflet").then((L) => {
       if (!active || !containerRef.current) return;
