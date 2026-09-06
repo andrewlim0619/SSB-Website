@@ -77,7 +77,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan siomay dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus siomay selama 6 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -104,7 +109,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan hakau udang dari Freezer dan letakkan di suhu ruang selama 60 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus hakau udang selama 3 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -131,7 +141,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan kaki ayam dari Freezer dan letakkan di suhu ruang selama 60 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus kaki ayam selama 20 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -158,7 +173,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Pao dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus Pao selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -185,7 +205,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Pao dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus Pao selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -212,7 +237,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Pao dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus Pao selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -239,7 +269,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Mantao dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus Mantao selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -266,7 +301,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan kwotie dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus kwotie selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -293,7 +333,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Swikiau dari Freezer dan letakkan di suhu ruang selama 60 menit" },
+      { icon: "heat",   text: "Panaskan wajan dan minyak goreng" },
+      { icon: "heat",   text: "Goreng Swikiau hingga berwarna kuning keemasan" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat — dapat juga disajikan dengan cara dikukus" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -320,7 +365,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Lumpia dari Freezer dan letakkan di suhu ruang selama 60 menit" },
+      { icon: "heat",   text: "Panaskan wajan dan minyak goreng" },
+      { icon: "heat",   text: "Goreng Lumpia hingga berwarna kuning keemasan" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
   {
@@ -335,9 +385,9 @@ export const ALL_PRODUCTS: ProductData[] = [
     tags: ["HALAL", "FROZEN"],
     specs: {
       sku: "DIM-SC-001",
-      beratBersih: "400g",
+      beratBersih: "360g",
       isiPerPack: "8 pcs",
-      beratPcs: "50g",
+      beratPcs: "45g",
       kemasan: "Tray + Plastic Wrap",
       ukuranTray: "24 x 15 x 5 cm",
       isiPerKarton: "N/A",
@@ -347,7 +397,12 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: DIMSUM_SERVING,
+    servingSuggestions: [
+      { icon: "freeze", text: "Keluarkan Pao dari Freezer dan letakkan di suhu ruang selama 40 menit" },
+      { icon: "steam",  text: "Panaskan alat kukus hingga air mendidih" },
+      { icon: "number", text: "Kukus Pao selama 5 menit" },
+      { icon: "serve",  text: "Angkat dan sajikan hangat" },
+    ],
     availableFor: DIMSUM_AVAILABLE,
   },
 
@@ -540,7 +595,11 @@ export const ALL_PRODUCTS: ProductData[] = [
       sertifikasi: "Halal BPJPH",
       asalProduk: "Indonesia",
     },
-    servingSuggestions: SNACK_SERVING,
+    servingSuggestions: [
+      { icon: "open",  text: "Kocok hingga rata sebelum dikonsumsi paling lambat 1 minggu setelah kemasan dibuka" },
+      { icon: "serve", text: "Buka kemasan dan sajikan langsung di mangkuk — siap dinikmati tanpa perlu dimasak" },
+      { icon: "freeze",text: "Setelah dibuka, simpan dalam wadah kedap udara di tempat sejuk agar tetap renyah" },
+    ],
     availableFor: SNACK_AVAILABLE,
   },
 ];

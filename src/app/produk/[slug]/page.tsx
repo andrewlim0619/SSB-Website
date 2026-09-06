@@ -238,7 +238,9 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 {product.servingSuggestions.map((step, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="w-7 h-7 rounded-full bg-teal/10 border border-teal/30 flex items-center justify-center text-teal shrink-0 mt-0.5">
-                      {SERVING_ICONS[step.icon] ?? <span className="text-xs font-bold text-teal">{i + 1}</span>}
+                      {step.icon === "number"
+                        ? <span className="text-xs font-bold">{step.text.match(/(\d+)\s*menit/)?.[1] ?? String(i + 1)}</span>
+                        : (SERVING_ICONS[step.icon] ?? <span className="text-xs font-bold text-teal">{i + 1}</span>)}
                     </div>
                     <p className="text-gray-600 text-sm leading-snug">{step.text}</p>
                   </li>
@@ -369,8 +371,8 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                     >
                       Minta Penawaran
                     </a>
-                    <a
-                      href="mailto:sales@selerasuksesbersama.com"
+                    <Link
+                      href="/hubungi-kami"
                       className="btn-outline w-full justify-center text-sm py-2.5 flex items-center gap-2"
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -378,7 +380,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                       Hubungi Sales
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </FadeUp>

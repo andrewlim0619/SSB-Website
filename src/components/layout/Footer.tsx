@@ -121,28 +121,13 @@ export default function Footer() {
             <p className="text-teal text-[10px] font-bold uppercase tracking-widest mb-1">Kontak</p>
             <h3 className="font-bold text-base mb-4 tracking-wide">HUBUNGI KAMI</h3>
 
-            <ul className="space-y-3 text-sm text-gray-300 mb-6">
-              {/* Email */}
-              <li className="flex items-center gap-2">
-                <svg className="w-4 h-4 shrink-0 text-teal" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li>
                 <a href="mailto:sales@selerasuksesbersama.com" className="hover:text-teal transition-colors">
                   sales@selerasuksesbersama.com
                 </a>
               </li>
             </ul>
-
-            {/* Social icon buttons */}
-            <div className="flex items-center gap-3">
-              <a href="mailto:sales@selerasuksesbersama.com" aria-label="Email" className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-teal hover:text-teal text-gray-300 transition-colors">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-              </a>
-            </div>
           </div>
 
           {/* ── CTA ── */}

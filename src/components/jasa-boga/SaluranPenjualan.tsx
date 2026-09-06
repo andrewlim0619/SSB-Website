@@ -3,10 +3,10 @@ import FadeUp from "@/components/ui/FadeUp";
 
 const platforms = [
   { name: "99 Ranch Market",     image: "/images/client%20logos/platform/99_ranch_market_logo.png",             scale: 1.4 },
-  { name: "Allfresh",            image: "/images/client%20logos/platform/Allfresh_processed.png",               scale: 1.2 },
+  { name: "Allfresh",            image: "/images/client%20logos/platform/Allfresh.jpg",                         scale: 1.2 },
   { name: "Diamond Supermarket", image: "/images/client%20logos/platform/Diamond-Supermarket_processed.png",    scale: 1.2 },
   { name: "Foodhall",            image: "/images/client%20logos/platform/Logo-Foodhall-800x480_processed.png",  scale: 1.1 },
-  { name: "Grand Lucky",         image: "/images/client%20logos/platform/grandlucky_processed.png",             scale: 1.3 },
+  { name: "Grand Lucky",         image: "/images/client%20logos/platform/GrandLucky_Superstore_.svg",          scale: 1.3 },
   { name: "Papaya Market",       image: "/images/client%20logos/platform/Papaya-Market_processed.png",          scale: 1.3 },
   { name: "Rumah Buah",          image: "/images/client%20logos/platform/logo-partner-13-rumah-buah-logo.jpeg", scale: 1.4 },
 ];
