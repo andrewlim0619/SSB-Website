@@ -7,21 +7,21 @@ const categories = [
     title: "Dimsum Frozen",
     description:
       "Pilihan dimsum premium siap saji dengan cita rasa autentik dan kualitas terbaik.",
-    image: "/images/products/dimsum/hakau_udang_1.png",
+    image: "/images/beranda_thumbnails/Beranda_Aneka%20Dimsum.png",
     href: "/produk?kategori=dimsum",
   },
   {
     title: "Aneka Saus",
     description:
       "Beragam saus berkualitas untuk melengkapi kebutuhan foodservice maupun retail.",
-    image: "/images/products/sauce/Beranda_Aneka Saus.png",
+    image: "/images/beranda_thumbnails/Beranda_Aneka%20Saus.png",
     href: "/produk?kategori=saus",
   },
   {
     title: "Camilan",
     description:
       "Pilihan camilan premium yang cocok untuk berbagai segmen pasar.",
-    image: "/images/products/snack/crispy_fish_skin.png",
+    image: "/images/beranda_thumbnails/Beranda_Aneka%20Snacks.png",
     href: "/produk?kategori=camilan",
   },
 ];

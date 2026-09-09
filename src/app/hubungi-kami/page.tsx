@@ -8,7 +8,7 @@ export default function HubungiKami() {
       {/* Faded warehouse background */}
       <div
         className="absolute inset-0 pointer-events-none bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/banner/warehouse.jpg')", opacity: 0.08 }}
+        style={{ backgroundImage: "url('/images/banner/perjalanankami_banner.png')", opacity: 0.08 }}
       />
       {/* Light overlay to keep it clean */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-white/60 via-transparent to-white/40" />

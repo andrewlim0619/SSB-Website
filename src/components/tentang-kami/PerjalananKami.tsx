@@ -56,7 +56,7 @@ export default function PerjalananKami() {
           <FadeUp>
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-72 md:h-96">
               <Image
-                src="/images/banner/homepage_banner.png"
+                src="/images/banner/perjalanankami_banner.png"
                 alt="SSB Team"
                 fill
                 className="object-cover object-center"

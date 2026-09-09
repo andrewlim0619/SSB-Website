@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/banner/homepage_banner.png"
+          src="/images/banner/Homepage%20Banner.png"
           alt="SSB Food Products"
           fill
           className="object-cover object-center"

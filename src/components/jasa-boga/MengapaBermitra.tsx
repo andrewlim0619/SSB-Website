@@ -10,12 +10,6 @@ const reasons = [
   { title: "Fleksibel Sesuai Kebutuhan", desc: "Solusi yang dapat disesuaikan dengan skala dan kebutuhan bisnis Anda." },
 ];
 
-const photos = [
-  { src: "/images/products/dimsum/hakau_udang_1.png", alt: "Hakau Udang", fit: "object-contain" },
-  { src: "/images/products/sauce/Beranda_Aneka Saus.png", alt: "Aneka Saus", fit: "object-cover" },
-  { src: "/images/products/dimsum/chicken_shrimp_dumpling.png", alt: "Chicken Shrimp Dumpling", fit: "object-contain" },
-  { src: "/images/products/snack/crispy_fish_skin.png", alt: "Crispy Fish Skin", fit: "object-contain" },
-];
 
 export default function MengapaBermitra() {
   return (
@@ -46,20 +40,16 @@ export default function MengapaBermitra() {
             </ul>
           </FadeUp>
 
-          {/* Right: product photo mosaic */}
+          {/* Right: keunggulan collage */}
           <FadeUp delay={100}>
-            <div className="grid grid-cols-2 gap-3">
-              {photos.map((p) => (
-                <div key={p.src} className="relative rounded-3xl overflow-hidden bg-gray-50 border border-gray-200 shadow-sm aspect-square">
-                  <Image
-                    src={p.src}
-                    alt={p.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                </div>
-              ))}
+            <div className="relative rounded-3xl overflow-hidden shadow-md w-full aspect-square">
+              <Image
+                src="/images/banner/keunggulankami_collage.png"
+                alt="Keunggulan SSB"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </FadeUp>
 
