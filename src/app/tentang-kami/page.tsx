@@ -8,10 +8,20 @@ import SertifikasiStandar from "@/components/tentang-kami/SertifikasiStandar";
 import BuktiSertifikasi from "@/components/shared/BuktiSertifikasi";
 import TentangCTA from "@/components/tentang-kami/TentangCTA";
 
-export const metadata = {
-  title: "Tentang Kami | PT Selera Sukses Bersama",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tentang Kami",
   description:
-    "Mengenal PT Selera Sukses Bersama — partner distribusi makanan dan foodservice terpercaya di Indonesia.",
+    "Mengenal PT Selera Sukses Bersama — partner distribusi makanan dan foodservice terpercaya di Indonesia sejak 2020.",
+  alternates: { canonical: "https://www.selerasuksesbersama.com/tentang-kami" },
+  openGraph: {
+    title: "Tentang Kami | PT Selera Sukses Bersama",
+    description:
+      "Mengenal PT Selera Sukses Bersama — partner distribusi makanan dan foodservice terpercaya di Indonesia sejak 2020.",
+    url: "https://www.selerasuksesbersama.com/tentang-kami",
+    images: [{ url: "/images/banner/perjalanankami_banner.png", width: 1200, height: 630, alt: "Perjalanan PT Selera Sukses Bersama" }],
+  },
 };
 
 export default function TentangKami() {

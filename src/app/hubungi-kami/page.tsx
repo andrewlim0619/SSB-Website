@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import ContactForm from "@/components/hubungi-kami/ContactForm";
 import FadeUp from "@/components/ui/FadeUp";
+
+export const metadata: Metadata = {
+  title: "Hubungi Kami",
+  description:
+    "Hubungi tim SSB untuk informasi harga, kemitraan distribusi, private label, atau pertanyaan produk. Kami merespons dalam 1–2 hari kerja.",
+  alternates: { canonical: "https://www.selerasuksesbersama.com/hubungi-kami" },
+  openGraph: {
+    title: "Hubungi Kami | PT Selera Sukses Bersama",
+    description:
+      "Hubungi tim SSB untuk informasi harga, kemitraan distribusi, private label, atau pertanyaan produk.",
+    url: "https://www.selerasuksesbersama.com/hubungi-kami",
+  },
+};
 
 export default function HubungiKami() {
   return (

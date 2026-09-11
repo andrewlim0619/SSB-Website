@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
@@ -7,8 +8,34 @@ import { ALL_PRODUCTS, getProductBySlug, getRelatedProducts } from "@/data/produ
 import ProductGallery from "@/components/produk/ProductGallery";
 import FadeUp from "@/components/ui/FadeUp";
 
+const SITE_URL = "https://www.selerasuksesbersama.com";
+
 export function generateStaticParams() {
   return ALL_PRODUCTS.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+  if (!product) return {};
+
+  const title = product.name;
+  const description = `${product.name} — ${product.beratBersih ?? ""} ${product.category === "dimsum" ? "dimsum premium beku halal" : "produk premium"} dari PT Selera Sukses Bersama. Tersedia untuk hotel, restoran, dan distributor.`;
+  const url = `${SITE_URL}/produk/${slug}`;
+  const ogImage = product.image ? `${SITE_URL}${product.image}` : `${SITE_URL}/images/banner/Homepage%20Banner.png`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${title} | PT Selera Sukses Bersama`,
+      description,
+      url,
+      images: [{ url: ogImage, width: 800, height: 800, alt: title }],
+    },
+    twitter: { card: "summary_large_image", title: `${title} | PT Selera Sukses Bersama`, description, images: [ogImage] },
+  };
 }
 
 function getGalleryImages(slug: string): string[] {
