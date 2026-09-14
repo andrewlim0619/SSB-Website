@@ -8,7 +8,7 @@ export default function ProductsHero() {
       <div className="absolute inset-0">
         <Image
           src="/images/banner/Produk Banner.png"
-          alt="Produk SSB"
+          alt="Katalog Frozen Dimsum, Saus, dan Camilan Premium — PT Selera Sukses Bersama"
           fill
           className="object-cover object-center"
           priority
@@ -33,24 +33,24 @@ export default function ProductsHero() {
             className="inline-block bg-teal/10 text-teal text-xs font-semibold px-3 py-1 rounded mb-4 tracking-wider uppercase"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.1s both" }}
           >
-            Katalog Produk
+            Supplier Frozen Dimsum &amp; Makanan Premium
           </span>
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy leading-tight mb-4"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.25s both" }}
           >
-            Produk{" "}
-            <span className="text-teal">Berkualitas</span>{" "}
-            untuk Bisnis Anda
+            Katalog{" "}
+            <span className="text-teal">Frozen Dimsum</span>
+            , Saus &amp; Camilan Premium
           </h1>
 
           <p
             className="text-gray-700 text-sm md:text-base leading-relaxed"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.4s both" }}
           >
-            Berbagai pilihan frozen food, dimsum premium, saus, dan cemilan berkualitas
-            untuk kebutuhan foodservice, hotel, restoran, dan distribusi di seluruh Indonesia.
+            Temukan pilihan frozen dimsum halal, saus premium, dan camilan berkualitas dari
+            supplier terpercaya untuk kebutuhan hotel, restoran, kafe, dan distributor di seluruh Indonesia.
           </p>
 
         </div>

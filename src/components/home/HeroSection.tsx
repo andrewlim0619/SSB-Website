@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/images/banner/Homepage%20Banner.png"
-          alt="SSB Food Products"
+          alt="PT Selera Sukses Bersama — Supplier Frozen Dimsum dan Makanan Premium Indonesia"
           fill
           className="object-cover object-center"
           priority
@@ -34,26 +34,27 @@ export default function HeroSection() {
             className="inline-block bg-teal/10 text-teal text-xs font-semibold px-3 py-1 rounded mb-4 tracking-wider uppercase"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.1s both" }}
           >
-            Food Distribution &amp; Foodservice Solutions
+            Supplier Frozen Dimsum &amp; Foodservice Indonesia
           </span>
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy leading-tight mb-4"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.25s both" }}
           >
-            Mitra Terpercaya untuk{" "}
+            Supplier{" "}
             <span className="text-teal">
-              Solusi Foodservice &amp; Distribusi Makanan
-            </span>
+              Frozen Dimsum &amp; Makanan Premium
+            </span>{" "}
+            untuk Bisnis Anda
           </h1>
 
           <p
             className="text-gray-700 text-sm md:text-base mb-3 leading-relaxed"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.4s both" }}
           >
-            PT Selera Sukses Bersama menyediakan produk makanan beku, dimsum
-            premium, saus, dan camilan berkualitas tinggi untuk hotel, restoran,
-            kafe, retail, distributor, dan industri makanan di seluruh Indonesia.
+            PT Selera Sukses Bersama adalah supplier frozen dimsum, saus premium,
+            dan camilan halal berkualitas tinggi untuk hotel, restoran, kafe,
+            retail, distributor, dan industri makanan di seluruh Indonesia.
           </p>
           <p
             className="text-gray-600 text-sm mb-8 leading-relaxed"

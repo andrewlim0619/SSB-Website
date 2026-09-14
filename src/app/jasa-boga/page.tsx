@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Solusi makanan untuk bisnis Anda — produk siap pakai, custom development, private label, dan foodservice solutions.",
     url: "https://www.selerasuksesbersama.com/jasa-boga",
-    images: [{ url: "/images/banner/keunggulankami_collage.png", width: 1200, height: 630, alt: "Jasa Boga SSB" }],
+    images: [{ url: "/images/banner/Jasa%20Boga%20Banner.png", width: 1200, height: 630, alt: "Jasa Boga SSB" }],
   },
 };
 

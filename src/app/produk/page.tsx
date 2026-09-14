@@ -7,16 +7,16 @@ import Testimonials from "@/components/home/Testimonials";
 import { ALL_PRODUCTS } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Produk",
+  title: "Frozen Dimsum & Produk Makanan Premium",
   description:
-    "Jelajahi produk SSB: dimsum frozen premium, aneka saus, dan camilan berkualitas halal untuk hotel, restoran, kafe, dan distributor di Indonesia.",
+    "Katalog frozen dimsum halal, saus premium, dan camilan berkualitas dari supplier terpercaya Indonesia. Tersedia untuk hotel, restoran, kafe, retail, dan distributor.",
   alternates: { canonical: "https://www.selerasuksesbersama.com/produk" },
   openGraph: {
-    title: "Produk | PT Selera Sukses Bersama",
+    title: "Frozen Dimsum & Produk Makanan Premium | PT Selera Sukses Bersama",
     description:
-      "Dimsum frozen premium, aneka saus, dan camilan halal berkualitas — distribusi ke seluruh Indonesia.",
+      "Katalog frozen dimsum halal, saus premium, dan camilan berkualitas dari supplier terpercaya untuk hotel, restoran, kafe, dan distributor di Indonesia.",
     url: "https://www.selerasuksesbersama.com/produk",
-    images: [{ url: "/images/beranda_thumbnails/Beranda_Aneka%20Dimsum.png", width: 1200, height: 630, alt: "Produk SSB" }],
+    images: [{ url: "/images/beranda_thumbnails/Beranda_Aneka%20Dimsum.png", width: 1200, height: 630, alt: "Frozen Dimsum Premium — PT Selera Sukses Bersama" }],
   },
 };
 
@@ -34,7 +34,7 @@ export default function Produk() {
         id="dimsum"
         categoryId="dimsum"
         title="Frozen Dimsum"
-        subtitle="Dibuat dengan bahan pilihan dan proses produksi higienis untuk menghadirkan cita rasa autentik dan kualitas terbaik."
+        subtitle="Supplier frozen dimsum halal dengan bahan pilihan dan proses higienis — cita rasa autentik, kualitas konsisten."
         products={dimsumProducts}
       />
 

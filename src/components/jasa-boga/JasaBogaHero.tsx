@@ -7,8 +7,8 @@ export default function JasaBogaHero() {
       {/* Full-bleed background */}
       <div className="absolute inset-0">
         <Image
-          src="/images/banner/Jasa Boga Banner.png"
-          alt="Jasa Boga SSB"
+          src="/images/banner/Jasa%20Boga%20Banner.png"
+          alt="Jasa Boga PT Selera Sukses Bersama — Solusi Foodservice dan Supplier Frozen Dimsum Indonesia"
           fill
           className="object-cover object-center"
           priority

@@ -9,23 +9,27 @@ const SITE_NAME = "PT Selera Sukses Bersama";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Distribusi Makanan & Foodservice Solutions`,
+    default: `${SITE_NAME} | Supplier Frozen Dimsum & Foodservice Indonesia`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "PT Selera Sukses Bersama menyediakan produk makanan beku, dimsum premium, saus, dan camilan berkualitas untuk hotel, restoran, kafe, retail, dan distributor di seluruh Indonesia.",
+    "PT Selera Sukses Bersama — supplier frozen dimsum dan makanan premium terpercaya untuk hotel, restoran, kafe, retail, dan distributor di seluruh Indonesia. Produk halal, kualitas konsisten.",
   keywords: [
+    "frozen dimsum supplier",
+    "supplier dimsum Indonesia",
+    "dimsum supplier Jakarta",
+    "frozen dimsum halal",
+    "supplier frozen dimsum",
     "dimsum frozen Indonesia",
     "distribusi makanan Indonesia",
-    "foodservice solutions",
-    "supplier dimsum",
+    "foodservice solutions Indonesia",
+    "supplier makanan frozen",
     "saus premium Indonesia",
-    "frozen food supplier",
+    "frozen food supplier Indonesia",
     "PT Selera Sukses Bersama",
     "SSB food",
-    "camilan premium",
     "makanan beku halal",
-    "supplier hotel restoran",
+    "supplier hotel restoran Indonesia",
   ],
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
@@ -40,9 +44,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} | Distribusi Makanan & Foodservice Solutions`,
+    title: `${SITE_NAME} | Supplier Frozen Dimsum & Foodservice Indonesia`,
     description:
-      "Supplier dimsum premium, saus, dan camilan halal berkualitas untuk hotel, restoran, kafe, dan distributor di seluruh Indonesia.",
+      "Supplier frozen dimsum, saus premium, dan camilan halal berkualitas untuk hotel, restoran, kafe, dan distributor di seluruh Indonesia.",
     images: [
       {
         url: "/images/banner/Homepage%20Banner.png",
@@ -54,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Distribusi Makanan & Foodservice Solutions`,
+    title: `${SITE_NAME} | Supplier Frozen Dimsum & Foodservice Indonesia`,
     description:
-      "Supplier dimsum premium, saus, dan camilan halal berkualitas untuk hotel, restoran, kafe, dan distributor di seluruh Indonesia.",
+      "Supplier frozen dimsum, saus premium, dan camilan halal berkualitas untuk hotel, restoran, kafe, dan distributor di seluruh Indonesia.",
     images: ["/images/banner/Homepage%20Banner.png"],
   },
   alternates: {

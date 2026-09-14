@@ -9,7 +9,7 @@ export default function TentangHero() {
       <div className="absolute inset-0">
         <Image
           src="/images/banner/warehouse.jpg"
-          alt="SSB Gudang dan Distribusi"
+          alt="PT Selera Sukses Bersama — Gudang Distribusi Frozen Dimsum dan Makanan Premium Indonesia"
           fill
           className="object-cover object-center"
           priority

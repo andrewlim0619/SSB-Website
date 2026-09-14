@@ -4,9 +4,9 @@ import FadeUp from "@/components/ui/FadeUp";
 
 const categories = [
   {
-    title: "Dimsum Frozen",
+    title: "Frozen Dimsum",
     description:
-      "Pilihan dimsum premium siap saji dengan cita rasa autentik dan kualitas terbaik.",
+      "Pilihan frozen dimsum premium siap saji dengan cita rasa autentik dan kualitas terbaik — halal dan higienis.",
     image: "/images/beranda_thumbnails/Beranda_Aneka%20Dimsum.png",
     href: "/produk?kategori=dimsum",
   },
@@ -58,7 +58,7 @@ export default function ProductsPreview() {
               >
                 <Image
                   src={cat.image}
-                  alt={cat.title}
+                  alt={`${cat.title} — PT Selera Sukses Bersama Supplier Indonesia`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
