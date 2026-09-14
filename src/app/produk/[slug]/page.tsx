@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return {};
 
   const title = product.name;
-  const description = `${product.name} — ${product.beratBersih ?? ""} ${product.category === "dimsum" ? "dimsum premium beku halal" : "produk premium"} dari PT Selera Sukses Bersama. Tersedia untuk hotel, restoran, dan distributor.`;
+  const description = `${product.name} — ${product.specs?.beratBersih ?? ""} ${product.category === "dimsum" ? "frozen dimsum premium halal" : "produk premium"} dari PT Selera Sukses Bersama. Tersedia untuk hotel, restoran, dan distributor.`;
   const url = `${SITE_URL}/produk/${slug}`;
   const ogImage = product.image ? `${SITE_URL}${product.image}` : `${SITE_URL}/images/banner/Homepage%20Banner.png`;
 
