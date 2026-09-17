@@ -55,7 +55,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   // ── DIMSUM ──────────────────────────────────────────────────────────────
   {
     slug: "chicken-shrimp-siewmay",
-    name: "Chicken & Shrimp Siewmay",
+    name: "SKS Siomay Ayam & Udang",
     nameId: "Siomay Ayam & Udang",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -87,12 +87,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "hakau-udang",
-    name: "Hakau Udang",
+    name: "SKS Hakau Udang",
     nameId: "Har Gow Udang Premium",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
     description:
-      "Hakau udang SSB merupakan dimsum premium dengan kulit tipis dan lembut yang membungkus isian udang berkualitas, menghadirkan cita rasa gurih dan tekstur kenyal yang lezat di setiap gigitan.",
+      "Hakau udang SKS merupakan dimsum premium dengan kulit tipis dan lembut yang membungkus isian udang berkualitas, menghadirkan cita rasa gurih dan tekstur kenyal yang lezat di setiap gigitan.",
     image: "/images/products/dimsum/hakau_udang_1.png",
     tags: ["HALAL", "FROZEN"],
     specs: {
@@ -119,7 +119,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "blackpepper-chicken-feet",
-    name: "Blackpepper Chicken Feet",
+    name: "SKS Ceker Ayam Lada Hitam",
     nameId: "Ceker Ayam Lada Hitam",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -151,7 +151,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chasiew-pao",
-    name: "Chasiew Pao",
+    name: "SKS Bakpao Char Siew",
     nameId: "Bakpao Char Siew",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -183,7 +183,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chocolate-pao",
-    name: "Chocolate Pao",
+    name: "SKS Bakpao Cokelat",
     nameId: "Bakpao Cokelat",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -215,7 +215,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "salted-egg-pao",
-    name: "Salted Egg Pao",
+    name: "SKS Bakpao Telur Asin",
     nameId: "Bakpao Telur Asin",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -247,7 +247,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "mantao",
-    name: "Mantao",
+    name: "SKS Mantao",
     nameId: "Roti Kukus Tiongkok",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -279,7 +279,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chicken-kwotie",
-    name: "Chicken Kwotie",
+    name: "SKS Kwotie Ayam",
     nameId: "Gyoza Ayam Panggang",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -311,7 +311,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chicken-shrimp-dumpling",
-    name: "Chicken & Shrimp Dumpling",
+    name: "SKS Dumpling Ayam & Udang",
     nameId: "Pangsit Ayam & Udang",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -343,7 +343,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chicken-shrimp-beancurd-roll",
-    name: "Chicken & Shrimp Beancurd Roll",
+    name: "SKS Beancurd Roll Ayam & Udang",
     nameId: "Cheong Fun Ayam & Udang",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -375,7 +375,7 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "soy-sauce-chicken-pao",
-    name: "Soy Sauce Chicken Pao",
+    name: "SKS Bakpao Ayam Kecap",
     nameId: "Bakpao Ayam Kecap",
     category: "dimsum",
     categoryLabel: "Frozen Dimsum",
@@ -409,12 +409,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   // ── SAUS (alphabetical) ──────────────────────────────────────────────────
   {
     slug: "blackpepper-sauce",
-    name: "Blackpepper Sauce",
+    name: "The Duck King Black Pepper Sauce",
     nameId: "Saus Lada Hitam",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Saus lada hitam dengan cita rasa pedas yang khas dan aroma rempah yang kuat. Dibuat dari lada hitam pilihan yang digiling kasar, menghadirkan sensasi pedas hangat yang sempurna untuk steak, tumisan, dan aneka hidangan.",
+      "Saus lada hitam The Duck King dengan cita rasa pedas yang khas dan aroma rempah yang kuat. Dibuat dari lada hitam pilihan yang digiling kasar, menghadirkan sensasi pedas hangat yang sempurna untuk steak, tumisan, dan aneka hidangan.",
     image: "/images/products/sauce/blackpepper_sauce.png",
     tags: ["HALAL"],
     specs: {
@@ -436,12 +436,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "chili-oil",
-    name: "Chili Oil",
+    name: "The Duck King Chili Oil",
     nameId: "Minyak Cabai",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Minyak cabai aromatik dengan perpaduan cabai pilihan, bawang putih, dan rempah yang diinfus perlahan. Aroma yang menggugah selera dan rasa pedas yang kompleks menjadikan Chili Oil pelengkap sempurna untuk berbagai hidangan.",
+      "The Duck King Chili Oil — minyak cabai aromatik dengan perpaduan cabai pilihan, bawang putih, dan rempah yang diinfus perlahan. Aroma yang menggugah selera dan rasa pedas yang kompleks menjadikan Chili Oil pelengkap sempurna untuk berbagai hidangan.",
     image: "/images/products/sauce/chili_oil.png",
     tags: ["HALAL"],
     specs: {
@@ -463,12 +463,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "duck-sauce",
-    name: "Duck Sauce",
+    name: "The Duck King Duck Sauce",
     nameId: "Saus Bebek",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Saus bebek khas dengan keseimbangan rasa manis, asam, dan gurih yang sempurna. Dibuat dari bahan-bahan pilihan dengan resep tradisional yang telah teruji, saus ini menjadi pelengkap ideal untuk berbagai hidangan bebek dan ayam.",
+      "The Duck King Duck Sauce — saus bebek khas dengan keseimbangan rasa manis, asam, dan gurih yang sempurna. Dibuat dari bahan-bahan pilihan dengan resep tradisional yang telah teruji, saus ini menjadi pelengkap ideal untuk berbagai hidangan bebek dan ayam.",
     image: "/images/products/sauce/duck_sauce.png",
     tags: ["HALAL"],
     specs: {
@@ -490,12 +490,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "kung-pao-sauce",
-    name: "Kung Pao Sauce",
+    name: "The Duck King Kung Pao Sauce",
     nameId: "Saus Kung Pao",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Saus Kung Pao autentik dengan perpaduan rasa pedas, manis, asam, dan asin yang seimbang. Dibuat dari cabai kering, kacang tanah, dan bumbu rempah pilihan — sempurna untuk membuat Kung Pao Chicken atau tumisan pedas lainnya.",
+      "The Duck King Kung Pao Sauce — saus autentik dengan perpaduan rasa pedas, manis, asam, dan asin yang seimbang. Dibuat dari cabai kering, kacang tanah, dan bumbu rempah pilihan — sempurna untuk membuat Kung Pao Chicken atau tumisan pedas lainnya.",
     image: "/images/products/sauce/kung_pao_sauce.png",
     tags: ["HALAL"],
     specs: {
@@ -517,12 +517,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "sweet-sour-sauce",
-    name: "Sweet & Sour Sauce",
+    name: "The Duck King Sweet & Sour Sauce",
     nameId: "Saus Asam Manis",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Saus asam manis klasik dengan keseimbangan sempurna antara manisnya gula dan asamnya cuka pilihan. Warna merah yang cerah dan konsistensi yang pas menjadikannya saus serbaguna untuk aneka hidangan.",
+      "The Duck King Sweet & Sour Sauce — saus asam manis klasik dengan keseimbangan sempurna antara manisnya gula dan asamnya cuka pilihan. Warna merah yang cerah dan konsistensi yang pas menjadikannya saus serbaguna untuk aneka hidangan.",
     image: "/images/products/sauce/sweet_sour_sauce.png",
     tags: ["HALAL"],
     specs: {
@@ -544,12 +544,12 @@ export const ALL_PRODUCTS: ProductData[] = [
   },
   {
     slug: "xo-sauce",
-    name: "XO Sauce",
+    name: "The Duck King XO Sauce",
     nameId: "Saus XO Premium",
     category: "saus",
     categoryLabel: "Aneka Saus",
     description:
-      "Saus XO premium dengan perpaduan seafood pilihan — udang kering, scallop, dan ikan — yang dimasak perlahan bersama bawang putih, bawang merah, dan cabai. Saus mewah yang cocok untuk elevating berbagai hidangan.",
+      "The Duck King XO Sauce — saus premium dengan perpaduan seafood pilihan — udang kering, scallop, dan ikan — yang dimasak perlahan bersama bawang putih, bawang merah, dan cabai. Saus mewah yang cocok untuk elevating berbagai hidangan.",
     image: "/images/products/sauce/xo_sauce.png",
     tags: ["HALAL"],
     specs: {

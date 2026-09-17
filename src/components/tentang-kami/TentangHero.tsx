@@ -49,14 +49,14 @@ export default function TentangHero() {
             className="text-xs font-semibold text-navy/50 uppercase tracking-widest mb-4"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.35s both" }}
           >
-            Partner Distribusi Makanan &amp; Foodservice Terpercaya di Indonesia
+            Distributor &amp; Supplier Frozen Food Terpercaya — Jakarta, Jabodetabek &amp; Indonesia
           </p>
 
           <p
             className="text-sm text-gray-600 leading-relaxed mb-8 max-w-md"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.45s both" }}
           >
-            PT Selera Sukses Bersama menyediakan solusi distribusi makanan dan minuman berkualitas untuk hotel, restoran, kafe, retail, distributor, dan industri makanan di seluruh Indonesia.
+            PT Selera Sukses Bersama adalah distributor dan supplier frozen food, frozen dimsum SKS, dan saus premium The Duck King — melayani hotel, restoran, kafe, retail, dan distributor di Jakarta, Jabodetabek, dan seluruh Indonesia.
           </p>
 
           <div

@@ -34,35 +34,35 @@ export default function HeroSection() {
             className="inline-block bg-teal/10 text-teal text-xs font-semibold px-3 py-1 rounded mb-4 tracking-wider uppercase"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.1s both" }}
           >
-            Supplier Frozen Dimsum &amp; Foodservice Indonesia
+            Distributor &amp; Supplier Frozen Food Indonesia
           </span>
 
           <h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy leading-tight mb-4"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.25s both" }}
           >
-            Supplier{" "}
+            Supplier &amp; Distributor{" "}
             <span className="text-teal">
-              Frozen Dimsum &amp; Makanan Premium
+              Frozen Food &amp; Dimsum Premium
             </span>{" "}
-            untuk Bisnis Anda
+            Jakarta &amp; Indonesia
           </h1>
 
           <p
             className="text-gray-700 text-sm md:text-base mb-3 leading-relaxed"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.4s both" }}
           >
-            PT Selera Sukses Bersama adalah supplier frozen dimsum, saus premium,
-            dan camilan halal berkualitas tinggi untuk hotel, restoran, kafe,
-            retail, distributor, dan industri makanan di seluruh Indonesia.
+            PT Selera Sukses Bersama adalah distributor dan supplier frozen food,
+            frozen dimsum SKS, serta saus premium The Duck King — melayani hotel,
+            restoran, kafe, retail, dan distributor di Jakarta, Jabodetabek, dan
+            seluruh Indonesia.
           </p>
           <p
             className="text-gray-600 text-sm mb-8 leading-relaxed"
             style={{ animation: "ssb-fade-up 0.6s ease-out 0.4s both" }}
           >
-            Dengan fokus pada kualitas produk, konsistensi rasa, dan distribusi
-            yang andal, kami membantu bisnis Anda menghadirkan solusi makanan
-            yang praktis dan bernilai.
+            Produk halal bersertifikat, kualitas konsisten, distribusi andal —
+            solusi frozen food B2B terpercaya untuk bisnis Anda.
           </p>
 
           <div

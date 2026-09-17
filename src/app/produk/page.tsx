@@ -34,7 +34,7 @@ export default function Produk() {
         id="dimsum"
         categoryId="dimsum"
         title="Frozen Dimsum"
-        subtitle="Supplier frozen dimsum halal dengan bahan pilihan dan proses higienis — cita rasa autentik, kualitas konsisten."
+        subtitle="SKS Dimsum — supplier frozen dimsum halal dengan bahan pilihan dan proses higienis untuk hotel, restoran, dan distributor di Jakarta & Indonesia."
         products={dimsumProducts}
       />
 
@@ -42,7 +42,7 @@ export default function Produk() {
         id="saus"
         categoryId="saus"
         title="Aneka Saus"
-        subtitle="Ragam saus dengan resep spesial untuk melengkapi dan meningkatkan cita rasa menu masakan Anda."
+        subtitle="The Duck King Sauce — saus premium halal berkualitas untuk restoran, kafe, hotel, dan distributor di Indonesia."
         products={sausProducts}
       />
 
